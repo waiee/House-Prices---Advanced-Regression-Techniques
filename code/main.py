@@ -12,4 +12,4 @@ st.title("Data Visualization App")
 st.sidebar.subheader("Visualization Settings")
 
 #Setup file upload
-st.sidebar.file_uploader(label="Upload your CSV or Excel file.")
+st.sidebar.file_uploader(label="Upload your CSV or Excel file") 
