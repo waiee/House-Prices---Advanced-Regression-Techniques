@@ -25,5 +25,6 @@ if uploaded_file is not None:
         print(e)
         df = pd.read_excel(uploaded_file)
 
+try:
 st.write(df)
 
