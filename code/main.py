@@ -33,5 +33,5 @@ except Exception as e:
 
 pie_chart = px.pie(df, 
             title='Total No of Students',
-            value='Participants',
-            names='Students')
+            value='Employee',
+            names='Departments')
