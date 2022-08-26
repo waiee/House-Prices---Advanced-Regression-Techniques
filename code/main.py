@@ -29,8 +29,9 @@ try:
     st.write(df)
     pie_chart = px.pie(df,
                         title= "DataFrame",
-                        values='Employee',
-                        names= 'Departments')
+                        # values='Employee',
+                        # names= 'Departments'
+    )
     st.plotly_chart(pie_chart)
 
 except Exception as e:
