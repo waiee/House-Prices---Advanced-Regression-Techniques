@@ -15,6 +15,7 @@ st.sidebar.subheader("Visualization Settings")
 uploaded_file = st.sidebar.file_uploader(label="Upload your CSV or Excel file",
                         type=['csv', 'xlsx']) 
 
+global df
 if uploaded_file is not None:
     print(uploaded_file)
     print("Hello World")
@@ -23,3 +24,6 @@ if uploaded_file is not None:
     except Exception as e:
         print(e)
         df = pd.read_excel(uploaded_file)
+
+st.write(df)
+
