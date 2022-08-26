@@ -16,6 +16,10 @@ uploaded_file = st.sidebar.file_uploader(label="Upload your CSV or Excel file",
                         type=['csv', 'xlsx']) 
 
 if uploaded_file is not None:
+    print(uploaded_file)
     print("Hello World")
     try:
-        
+        df = pd.read_csv(uploaded_file)
+    except Exception as e:
+        print(e)
+        df = pd.read_excel(uploaded_file)
