@@ -31,3 +31,7 @@ except Exception as e:
     print(e)
     st.write("Please upload file in the application.")
 
+pie_chart = px.pie(df, 
+            title='Total No of Students',
+            value='Participants',
+            names='Students')
