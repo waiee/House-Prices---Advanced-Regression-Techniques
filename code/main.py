@@ -12,6 +12,8 @@ st.title("Data Visualization App")
 st.sidebar.subheader("Visualization Settings")
 
 #Setup file upload
-st.sidebar.file_uploader(label="Upload your CSV or Excel file"
+uploaded_file = st.sidebar.file_uploader(label="Upload your CSV or Excel file",
                         type=['csv', 'xlsx']) 
 
+if uploaded_file is not None:
+    print("Hello World")
