@@ -26,5 +26,8 @@ if uploaded_file is not None:
         df = pd.read_excel(uploaded_file)
 
 try:
-st.write(df)
+    st.write(df)
+except Exception as e:
+    print(e)
+    st.write("Please upload file in the application.")
 
