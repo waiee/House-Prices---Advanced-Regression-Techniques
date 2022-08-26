@@ -28,7 +28,8 @@ if uploaded_file is not None:
 try:
     st.write(df)
     pie_chart = px.pie(df)
-    
+    st.plotly_chart(pie_chart)
+
 except Exception as e:
     print(e)
     st.write("Please upload file in the application.")
