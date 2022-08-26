@@ -17,3 +17,5 @@ uploaded_file = st.sidebar.file_uploader(label="Upload your CSV or Excel file",
 
 if uploaded_file is not None:
     print("Hello World")
+    try:
+        
