@@ -7,6 +7,7 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 
 #App Title
 st.title("Data Visualization App")
+st.text("Created by Waiee Zainol")
 
 #Add a sidebar
 st.sidebar.subheader("Visualization Settings")
