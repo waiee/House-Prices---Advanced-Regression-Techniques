@@ -1,0 +1,1 @@
+print("Harini, aku berehat. Jumpa di kemudian hari vscode!")
